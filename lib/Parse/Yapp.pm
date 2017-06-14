@@ -496,7 +496,8 @@ or have any questions related to it, feel free to contact the author.
 
 =head1 AUTHOR
 
-Francois Desarmenien  <francois@fdesar.net>
+William N. Braswell, Jr. <wbraswell_cpan@NOSPAM.nym.hush.com>
+(Remove "NOSPAM".)
 
 =head1 SEE ALSO
 
