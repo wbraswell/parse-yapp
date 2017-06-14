@@ -1,0 +1,31 @@
+# [[[ EXCLUDE ALL GITHUB, UNUSED, AND AUTOMATICALLY-GENERATED FILES FROM CPAN ]]]
+# v0.100_000
+# [ GitHub & Travis-CI & AppVeyor ]
+^\.git
+^\.gitignore$
+^\.travis\.yml$
+^appveyor\.yml$
+
+# [ CPAN Build & Distribution ]
+# NEED UPDATE, CORRELATION #py000: list of CPAN files & directories to delete/exclude in Makefile.PL, .gitignore, and MANIFEST.SKIP
+# MANIFEST.SKIP is not auto-generated, but should not be distributed to end users
+^MANIFEST\.SKIP$
+# MANIFEST is needed by CPAN, do not exclude
+^MANIFEST\.bak$
+# META.yml & META.json are needed by CPAN, do not exclude
+^MYMETA\.
+^Makefile$
+^Makefile\.old
+^blib
+^pm_to_blib
+^MakeMaker-
+
+# [ Temporary Files, Ending With Tilde ~ Or swp ]
+~$
+swp$
+
+# [ POD ]
+^pod2htmd\.tmp$
+
+# [ Archives ]
+^backup

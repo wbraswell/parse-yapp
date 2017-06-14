@@ -504,8 +504,9 @@ yapp(1) perl(1) yacc(1) bison(1).
 
 =head1 COPYRIGHT
 
-The Parse::Yapp module and its related modules and shell scripts are copyright
-(c) 1998-2001 Francois Desarmenien, France. All rights reserved.
+The Parse::Yapp module and its related modules and shell scripts are copyright:
+Copyright © 1998, 1999, 2000, 2001, Francois Desarmenien.
+Copyright © 2017 William N. Braswell, Jr.
 
 You may use and distribute them under the terms of either
 the GNU General Public License or the Artistic License,
