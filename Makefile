@@ -58,11 +58,11 @@ DIRFILESEP = /
 DFSEP = $(DIRFILESEP)
 NAME = Parse::Yapp
 NAME_SYM = Parse_Yapp
-VERSION = 1.06
+VERSION = 1.2
 VERSION_MACRO = VERSION
-VERSION_SYM = 1_06
+VERSION_SYM = 1_2
 DEFINE_VERSION = -D$(VERSION_MACRO)=\"$(VERSION)\"
-XS_VERSION = 1.06
+XS_VERSION = 1.2
 XS_VERSION_MACRO = XS_VERSION
 XS_DEFINE_VERSION = -D$(XS_VERSION_MACRO)=\"$(XS_VERSION)\"
 INST_ARCHLIB = blib/arch
@@ -261,7 +261,7 @@ RCS_LABEL = rcs -Nv$(VERSION_SYM): -q
 DIST_CP = best
 DIST_DEFAULT = tardist
 DISTNAME = Parse-Yapp
-DISTVNAME = Parse-Yapp-1.06
+DISTVNAME = Parse-Yapp-1.2
 
 
 # --- MakeMaker macro section:
@@ -525,7 +525,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '  directory:' >> META_new.yml
 	$(NOECHO) $(ECHO) '    - t' >> META_new.yml
 	$(NOECHO) $(ECHO) '    - inc' >> META_new.yml
-	$(NOECHO) $(ECHO) 'version: '\''1.06'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) 'version: '\''1.2'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'x_serialization_backend: '\''CPAN::Meta::YAML version 0.018'\''' >> META_new.yml
 	-$(NOECHO) $(MV) META_new.yml $(DISTVNAME)/META.yml
 	$(NOECHO) $(ECHO) Generating META.json
@@ -563,7 +563,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '      }' >> META_new.json
 	$(NOECHO) $(ECHO) '   },' >> META_new.json
 	$(NOECHO) $(ECHO) '   "release_status" : "stable",' >> META_new.json
-	$(NOECHO) $(ECHO) '   "version" : "1.06",' >> META_new.json
+	$(NOECHO) $(ECHO) '   "version" : "1.2",' >> META_new.json
 	$(NOECHO) $(ECHO) '   "x_serialization_backend" : "JSON::PP version 2.27300"' >> META_new.json
 	$(NOECHO) $(ECHO) '}' >> META_new.json
 	-$(NOECHO) $(MV) META_new.json $(DISTVNAME)/META.json
@@ -873,7 +873,7 @@ testdb_static :: static pure_all
 # --- MakeMaker ppd section:
 # Creates a PPD (Perl Package Description) for a binary distribution.
 ppd :
-	$(NOECHO) $(ECHO) '<SOFTPKG NAME="Parse-Yapp" VERSION="1.06">' > Parse-Yapp.ppd
+	$(NOECHO) $(ECHO) '<SOFTPKG NAME="Parse-Yapp" VERSION="1.2">' > Parse-Yapp.ppd
 	$(NOECHO) $(ECHO) '    <ABSTRACT></ABSTRACT>' >> Parse-Yapp.ppd
 	$(NOECHO) $(ECHO) '    <AUTHOR></AUTHOR>' >> Parse-Yapp.ppd
 	$(NOECHO) $(ECHO) '    <IMPLEMENTATION>' >> Parse-Yapp.ppd

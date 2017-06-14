@@ -22,7 +22,8 @@ use strict;
 
 use vars qw ( $VERSION $COMPATIBLE $FILENAME );
 
-$VERSION = '1.06';
+# CORRELATION #py001: $VERSION must be changed in both Parse::Yapp & Parse::Yapp::Driver
+$VERSION = '1.2';
 $COMPATIBLE = '0.07';
 $FILENAME=__FILE__;
 
