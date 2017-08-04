@@ -24,6 +24,8 @@ our $VERSION = '1.2';
 
 __END__
 
+=encoding UTF-8
+
 =head1 NAME
 
 Parse::Yapp - Perl extension for generating and using LALR parsers. 

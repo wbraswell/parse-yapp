@@ -9,6 +9,8 @@
 #
 #
 
+=encoding UTF-8
+
 =head1 NAME
 
 yapp - A perl frontend to the Parse::Yapp module
