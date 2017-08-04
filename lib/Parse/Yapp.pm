@@ -18,7 +18,7 @@ use vars qw($VERSION @ISA);
 use Parse::Yapp::Output;
 
 # CORRELATION #py001: $VERSION must be changed in both Parse::Yapp & Parse::Yapp::Driver
-our $VERSION = '1.2';
+our $VERSION = '1.21';
 
 1;
 

@@ -174,3 +174,7 @@ Revision history for Perl extension Yapp.
       Enable Module Version In Parse::Yapp,
       Not Just Distribution Version In Parse::Yapp::Driver
     - Bump Version
+1.21 Fri Aug 04 2017
+    - Typo Fixes, POD Spelling (thanks to Gregor Herrmann)
+    - Bug Fix, Missing POD Encoding (thanks to Gregor Herrmann)
+
