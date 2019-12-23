@@ -159,7 +159,7 @@ sub YYCurval {
 sub YYExpect {
     my($self)=shift;
 
-    keys %{$self->{STATES}[$self->{STACK}[-1][0]]{ACTIONS}}
+    sort keys %{$self->{STATES}[$self->{STACK}[-1][0]]{ACTIONS}}
 }
 
 sub YYLexer {

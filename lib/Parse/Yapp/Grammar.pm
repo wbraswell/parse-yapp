@@ -340,7 +340,7 @@ sub _ReduceGrammar {
     $reachable = _Reachable($rules,$nterm,$term,$ufrules,$ufnterm);
 
     $$grammar{TERM}{chr(0)}=undef;
-    for my $sym (keys %$term) {
+    for my $sym (sort keys %$term) {
             (   exists($$reachable{$sym})
              or exists($values->{PREC}{$sym}) )
         and do {
@@ -352,7 +352,7 @@ sub _ReduceGrammar {
     }
 
     $$grammar{NTERM}{'$start'}=[];
-    for my $sym (keys %$nterm) {
+    for my $sym (sort keys %$nterm) {
             exists($$reachable{$sym})
         and do {
                 exists($values->{NULL}{$sym})
