@@ -215,7 +215,7 @@ single character, it is much more difficult in Perl, as there
 are so many ways of writing such literals. So there is no check
 for that today. If you need a brace in a double-quoted string, just
 quote it (C<\{> or C<\}>). For single-quoted strings, you will need
-to make a comment matching it I<in th right order>.
+to make a comment matching it I<in the right order>.
 Sorry for the inconvenience.
 
     {
@@ -257,9 +257,9 @@ Four useful methods in error recovery sub
     $_[0]->YYExpect
     $_[0]->YYLexer
 
-return respectivly the current input token that made the parse fail,
+return respectively the current input token that made the parse fail,
 its semantic value (both can be used to modify their values too, but
-I<know what you are doing> ! See I<Error reporting routine> section for
+I<know what you are doing>! See I<Error reporting routine> section for
 an example), a list which contains the tokens the parser expected when
 the failure occurred and a reference to the lexer routine.
 
@@ -300,9 +300,9 @@ module states and variables are held inside the parser object.
 
 Note: unfortunately, method calls in Perl have a lot of overhead,
       and when YYData is used, it may be called a huge number
-      of times. If your are not a *real* purist and efficiency
+      of times. If you are not a I<real> purist, and efficiency
       is your concern, you may access directly the user-space
-      in the object: $parser->{USER} wich is a reference to an
+      in the object: $parser->{USER} which is a reference to an
       anonymous hash array, and then benchmark.
 
 If no action is specified for a rule, the equivalant of a default
@@ -329,7 +329,7 @@ In such actions, you can use I<$_[1]..$_[n]> variables, which are the
 semantic values on the left of your action.
 
 Be aware that the way Parse::Yapp modifies your grammar because of
-I<in rule actions> can produce, in some cases, spurious conflicts
+I<in-rule actions> can produce, in some cases, spurious conflicts
 that wouldn't happen otherwise.  
 
 =item C<Generating the Parser Module>
@@ -361,7 +361,7 @@ They C<must> be returned as a list of two variables, the first one
 is the token known by the parser (symbolic or literal), the second
 one being anything you want (usually the content of the token, or the
 literal value) from a simple scalar value to any complex reference,
-as the parsing driver never use it but to call semantic actions:
+as the parsing driver only uses it to call semantic actions:
 
     ( 'NUMBER', $num )
 or
@@ -433,10 +433,10 @@ The order in which parameters appear is unimportant.
 Et voila.
 
 The YYParse method will do the parse, then return the last semantic
-value returned, or undef if error recovery cannot recover.
+value returned, or C<undef> if error recovery cannot recover.
 
 If you need to be sure the parse has been successful (in case your
-last returned semantic value I<is> undef) make a call to:
+last returned semantic value I<is> C<undef>), make a call to:
 
     $parser->YYNberr()
 
